@@ -22,10 +22,10 @@ const SignUp = () => {
         setPassword(event.target.value)
     }
 
-    const handleConfirmPasswordBlur = event => { 
+    const handleConfirmPasswordBlur = event => {
         setConfirmPassword(event.target.value)
     }
-    if(user){
+    if (user) {
         navigate('/shop')
     }
 
@@ -35,7 +35,7 @@ const SignUp = () => {
             setError('your two password  did not match');
             return;
         }
-        if(password.length < 6){
+        if (password.length < 6) {
             setError('Password must be 6 characters or longer')
             return;
         }
@@ -77,4 +77,3 @@ const SignUp = () => {
 };
 
 export default SignUp
- 
