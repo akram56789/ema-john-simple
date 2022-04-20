@@ -18,7 +18,7 @@ const Shop = () => {
         for (const id in storedCart) {
             const addedProduct = products.find(product => product.id === id);
             if (addedProduct) {
-                console.log(addedProduct);
+                // console.log(addedProduct);
             }
 
 

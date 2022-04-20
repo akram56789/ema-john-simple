@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import './SignUp.css';
+// import './SignUp.css';
 
 const SignUp = () => {
     const [email, setEmail] = useState('')
@@ -30,9 +30,10 @@ const SignUp = () => {
     }
 
     const handleCreateUser = event => {
+     
         event.preventDefault();
         if (password !== confirmPassword) {
-            setError('your two password  did not match');
+            setError('your  password  did not match');
             return;
         }
         if (password.length < 6) {
